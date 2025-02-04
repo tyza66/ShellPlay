@@ -1,0 +1,18 @@
+cat可以查看文件夹内容cat /etc/shell
+
+echo可查看环境变量的值
+echo $0 可以查看正在执行的脚本的名称
+
+直接输入脚本的路径就可以切换shell脚本版本
+
+使用name=aaa这样定义的就是普通变量 获取不到它的值的
+加上个export之后会正常增加环境变量 但是只能在当前的shell对话中有效
+如果想永久有效 通常建议将环境变量放入.bashrc中
+用户家目录下的是当前用户的 etc下面的是所有用户的
+
+一般直接在.bashrc最后几行加入
+export name=tyza66
+export channel=abc
+
+之后要用source .bashrc
+或者. .hashrc
