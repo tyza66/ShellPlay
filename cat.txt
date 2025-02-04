@@ -16,3 +16,5 @@ export channel=abc
 
 之后要用source .bashrc
 或者. .hashrc
+
+alias是设置别名
